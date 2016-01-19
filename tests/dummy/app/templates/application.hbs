@@ -1,0 +1,15 @@
+<article>
+  <h2>Welcome to Ember Pace.js Demo</h2>
+
+  <p>
+    <button {{action 'load'}}>Load Quote</button>
+  </p>
+
+  {{#if isFulfilled}}
+    <blockquote>
+      {{model.quote}}
+      <i>{{model.author}}</i>
+    </blockquote>
+  {{/if}}
+
+</article>
